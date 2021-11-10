@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30vh;
+  gap: 20%;
+  color: #111111;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  line-height: 2rem;
+}

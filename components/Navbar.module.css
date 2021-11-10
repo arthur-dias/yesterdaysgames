@@ -1,0 +1,25 @@
+.navbar {
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  color: #111111;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
+  color: #696969;
+}
+
+.links a:hover {
+  color: #000;
+  transition: color 0.2s ease;
+}
