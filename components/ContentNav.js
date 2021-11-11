@@ -1,14 +1,14 @@
-import NextLink from 'next/link'
+import Link from 'next/link'
 import styles from './ContentNav.module.css'
 
 const ContentNav = () => {
   return (
     <div className={styles.nav}>
-      <p className={styles.title}>LEAGUES</p>
-      <NextLink href='/nba'>NBA</NextLink>
-      <NextLink href='/nfl'>NFL</NextLink>
-      <NextLink href='/premierLeague'>Premier League</NextLink>
-      <NextLink href='/brasileirao'>Brasileirão</NextLink>
+      <p className={styles.title}>Leagues</p>
+      <Link href='/nba'>NBA</Link>
+      <Link href='/nfl'>NFL</Link>
+      <Link href='/premierLeague'>Premier League</Link>
+      <Link href='/brasileirao'>Brasileirão</Link>
     </div>
   )
 }

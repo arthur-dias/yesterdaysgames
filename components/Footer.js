@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         justifyContent: 'space-around',
       }}>
       <p>Made by Arthur</p>
-      <NextLink href='#'>Buy me a coffee</NextLink>
+      <Link href='#'>Buy me a coffee</Link>
     </div>
   )
 }

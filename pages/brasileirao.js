@@ -9,8 +9,8 @@ const brasileirao = (data) => {
         data={data}
         text={
           threadsData.length === 0
-            ? 'No Premier League games played yesterday'
-            : 'Premier League'
+            ? 'No Brasileirão games played yesterday'
+            : 'Brasileirão'
         }
       />
     </div>
