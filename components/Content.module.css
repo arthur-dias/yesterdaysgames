@@ -1,9 +1,7 @@
 .content {
-  height: 30vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .text {

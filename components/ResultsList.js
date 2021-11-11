@@ -1,3 +1,5 @@
+import styles from './ResultsList.module.css'
+
 const ResultsList = ({ data }) => {
   const threadsData = data.data.data.children
 
@@ -6,17 +8,15 @@ const ResultsList = ({ data }) => {
   } else {
     return (
       <div>
-        <ul>
+        <ul className={styles.list}>
           {threadsData.map((thread) => (
-            <li key={thread.data.title}>
-              <a href={thread.data.url} target='_blank' rel='noreferrer'>
-                {thread.data.title}
-              </a>
-              <button>
+            <li className={styles.item} key={thread.data.title}>
+              <button className={styles.button}>
                 <a href={thread.data.url} target='_blank' rel='noreferrer'>
-                  Thread
+                  Go to Thread
                 </a>
               </button>
+              {thread.data.title}
             </li>
           ))}
         </ul>
