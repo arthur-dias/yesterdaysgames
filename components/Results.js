@@ -1,4 +1,5 @@
 import ResultsList from './ResultsList'
+import HighlightsList from './HighlightsList'
 import styles from './Results.module.css'
 
 const Results = ({ data, text }) => {
@@ -6,6 +7,7 @@ const Results = ({ data, text }) => {
     <div className={styles.results}>
       <p className={styles.title}>{text}</p>
       <ResultsList data={data} />
+      <HighlightsList data={data} />
     </div>
   )
 }

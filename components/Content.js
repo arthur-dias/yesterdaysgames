@@ -1,7 +1,6 @@
 import ContentNav from './ContentNav'
 import Results from './Results'
 import styles from './Content.module.css'
-import Highlights from './Highlights'
 
 const Content = ({ data, text }) => {
   if (!data) {
@@ -18,7 +17,6 @@ const Content = ({ data, text }) => {
     <div className={styles.content}>
       <ContentNav />
       <Results data={data} text={text} />
-      <Highlights />
     </div>
   )
 }
