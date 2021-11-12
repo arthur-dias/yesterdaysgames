@@ -1,12 +1,12 @@
 import Content from '../components/Content'
 
-const premierLeague = (data) => {
-  const threadsData = data.data.data.children
+const premierLeague = (props) => {
+  const threadsData = props.threadsData.data.children
 
   return (
     <div>
       <Content
-        data={data}
+        data={props}
         text={
           threadsData.length === 0
             ? 'No Premier League games played yesterday'
@@ -17,20 +17,24 @@ const premierLeague = (data) => {
   )
 }
 
-export async function getStaticProps() {
-  const res = await fetch(
-    `https://www.reddit.com/r/soccer/search.json?q=title%3APost+Match+Thread+Premier+League&restrict_sr=on&include_over_18=on&sort=relevance&t=day`
-  )
-  const data = await res.json()
+export const getStaticProps = async () => {
+  const [threadsRes, highlightsRes] = await Promise.all([
+    fetch(
+      'https://www.reddit.com/r/soccer/search.json?q=title%3APost+Match+Thread+Premier+League&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
+    ),
+    fetch('https://www.reddit.com/r/soccer/top.json?limit=5&sort=top&t=day'),
+  ])
 
-  if (!data) {
-    return {
-      notFound: true,
-    }
-  }
+  const [threadsData, highlightsData] = await Promise.all([
+    threadsRes.json(),
+    highlightsRes.json(),
+  ])
 
   return {
-    props: { data }, // will be passed to the page component as props
+    props: {
+      threadsData,
+      highlightsData,
+    },
   }
 }
 
