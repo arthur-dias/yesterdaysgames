@@ -9,20 +9,3 @@
 .title {
   color: #111111;
 }
-
-.links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20%;
-}
-
-.links a {
-  color: #696969;
-  transition: all 0.3s ease-in-out;
-}
-
-.links a:hover {
-  color: #000;
-}
