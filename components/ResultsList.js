@@ -1,7 +1,7 @@
 import styles from './ResultsList.module.css'
 
 const ResultsList = ({ data }) => {
-  const threadsData = data.data.data.children
+  const threadsData = data.threadsData.data.children
 
   if (threadsData.length === 0) {
     return <p>Choose another league on the left to see the results!</p>
