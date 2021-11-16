@@ -1,16 +1,13 @@
 import Link from 'next/link'
+import styles from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-around',
-      }}>
-      <p>Made by Arthur</p>
-      <Link href='#'>Buy me a coffee</Link>
+    <div className={styles.footer}>
+      <Link href='https://www.buymeacoffee.com/arthurdias'>
+        Like it? Buy me a beer
+      </Link>
+      <Link href='https://github.com/arthur-dias/'>Made by Arthur</Link>
     </div>
   )
 }
