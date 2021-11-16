@@ -8,7 +8,8 @@ const brasileirao = (props) => {
       <Content
         data={props}
         text={'Brasileirão'}
-        title={'Top 5 Discussion topics'}
+        title={'Top 5 Discussion Topics'}
+        buttonText={'View Topic'}
       />
     </div>
   )

@@ -1,6 +1,6 @@
 import styles from './HighlightsList.module.css'
 
-const HighlightsList = ({ data, title }) => {
+const HighlightsList = ({ data, title, buttonText }) => {
   const highlightsData = data.highlightsData.data.children
 
   return (
@@ -11,7 +11,7 @@ const HighlightsList = ({ data, title }) => {
           <li className={styles.item} key={highlight.data.title}>
             <button className={styles.button}>
               <a href={highlight.data.url} target='_blank' rel='noreferrer'>
-                View highlight
+                {buttonText}
               </a>
             </button>
             {highlight.data.title}

@@ -8,7 +8,8 @@ const premierLeague = (props) => {
       <Content
         data={props}
         text={'Premier League'}
-        title={'Top 5 Discussion topics'}
+        title={'Top 5 Discussion Topics'}
+        buttonText={'View Topic'}
       />
     </div>
   )

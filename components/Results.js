@@ -2,13 +2,13 @@ import ResultsList from './ResultsList'
 import HighlightsList from './HighlightsList'
 import styles from './Results.module.css'
 
-const Results = ({ data, text, title }) => {
+const Results = ({ data, text, title, buttonText }) => {
   return (
     <div>
       <p className={styles.title}>{text}</p>
       <div className={styles.results}>
         <ResultsList data={data} />
-        <HighlightsList data={data} title={title} />
+        <HighlightsList data={data} title={title} buttonText={buttonText} />
       </div>
     </div>
   )

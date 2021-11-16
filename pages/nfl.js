@@ -5,7 +5,12 @@ const nfl = (props) => {
 
   return (
     <div>
-      <Content data={props} text={'NFL'} title={'Top 5 Highlights'} />
+      <Content
+        data={props}
+        text={'NFL'}
+        title={'Top 5 Highlights'}
+        buttonText={'Watch Highlight'}
+      />
     </div>
   )
 }
