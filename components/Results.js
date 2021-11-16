@@ -4,10 +4,12 @@ import styles from './Results.module.css'
 
 const Results = ({ data, text }) => {
   return (
-    <div className={styles.results}>
+    <div>
       <p className={styles.title}>{text}</p>
-      <ResultsList data={data} />
-      <HighlightsList data={data} />
+      <div className={styles.results}>
+        <ResultsList data={data} />
+        <HighlightsList data={data} />
+      </div>
     </div>
   )
 }

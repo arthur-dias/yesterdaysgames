@@ -1,9 +1,15 @@
 .results {
-  flex-basis: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-basis: 90%;
+  gap: 5%;
   padding: 0 25px;
 }
 
 .title {
+  text-align: center;
   font-size: 1.5rem;
   color: #111111;
 }

@@ -7,7 +7,8 @@ const ResultsList = ({ data }) => {
     return <p>Choose another league on the left to see the results!</p>
   } else {
     return (
-      <div>
+      <div className={styles.resultsList}>
+        <p className={styles.title}>Post Game Threads</p>
         <ul className={styles.list}>
           {threadsData.map((thread) => (
             <li className={styles.item} key={thread.data.title}>
@@ -16,7 +17,15 @@ const ResultsList = ({ data }) => {
                   Go to Thread
                 </a>
               </button>
-              {thread.data.title}
+              {thread.data.title
+                .replace('[Post Game Thread]', '')
+                .replace('Post Game Thread: ', '')
+                .replace('Post Match Thread: ', '')
+                .replace('Post-Match Thread:', '')
+                .replace('[Post-Match Thread]', '')
+                .replace('Post-match Thread:', '')
+                .replace('Post-match Thread |', '')
+                .trim()}
             </li>
           ))}
         </ul>
