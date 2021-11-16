@@ -7,11 +7,8 @@ const premierLeague = (props) => {
     <div>
       <Content
         data={props}
-        text={
-          threadsData.length === 0
-            ? 'No Premier League games played yesterday'
-            : 'Premier League'
-        }
+        text={'Premier League'}
+        title={'Top 5 Discussion topics'}
       />
     </div>
   )

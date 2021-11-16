@@ -2,7 +2,7 @@ import ContentNav from './ContentNav'
 import Results from './Results'
 import styles from './Content.module.css'
 
-const Content = ({ data, text }) => {
+const Content = ({ data, text, title }) => {
   if (!data) {
     return (
       <div className={styles.content}>
@@ -16,7 +16,7 @@ const Content = ({ data, text }) => {
   return (
     <div className={styles.content}>
       <ContentNav />
-      <Results data={data} text={text} />
+      <Results data={data} text={text} title={title} />
     </div>
   )
 }

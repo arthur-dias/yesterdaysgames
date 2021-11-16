@@ -4,7 +4,15 @@ const ResultsList = ({ data }) => {
   const threadsData = data.threadsData.data.children
 
   if (threadsData.length === 0) {
-    return <p>Choose another league on the left to see the results!</p>
+    return (
+      <div className={styles.resultsList}>
+        <p className={styles.title}>
+          No games were played yesterday! <br />
+          <br />
+          Choose another league on the left to see the results.
+        </p>
+      </div>
+    )
   } else {
     return (
       <div className={styles.resultsList}>

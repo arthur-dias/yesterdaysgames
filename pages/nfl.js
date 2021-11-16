@@ -5,12 +5,7 @@ const nfl = (props) => {
 
   return (
     <div>
-      <Content
-        data={props}
-        text={
-          threadsData.length === 0 ? 'No NFL games played yesterday' : 'NFL'
-        }
-      />
+      <Content data={props} text={'NFL'} title={'Top 5 Highlights'} />
     </div>
   )
 }

@@ -1,11 +1,11 @@
 import styles from './HighlightsList.module.css'
 
-const HighlightsList = ({ data }) => {
+const HighlightsList = ({ data, title }) => {
   const highlightsData = data.highlightsData.data.children
 
   return (
     <div className={styles.highlightsList}>
-      <p className={styles.title}>Top 5 highlights</p>
+      <p className={styles.title}>{title}</p>
       <ul className={styles.list}>
         {highlightsData.map((highlight) => (
           <li className={styles.item} key={highlight.data.title}>

@@ -7,11 +7,8 @@ const brasileirao = (props) => {
     <div>
       <Content
         data={props}
-        text={
-          threadsData.length === 0
-            ? 'No Brasileirão games played yesterday'
-            : 'Brasileirão'
-        }
+        text={'Brasileirão'}
+        title={'Top 5 Discussion topics'}
       />
     </div>
   )
