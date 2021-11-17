@@ -7,9 +7,6 @@ const Content = ({ data, text, title, buttonText }) => {
     return (
       <div className={styles.content}>
         <ContentNav />
-        <p className={styles.text}>
-          Pick one league on the list to view the Post Match Threads!
-        </p>
       </div>
     )
   }

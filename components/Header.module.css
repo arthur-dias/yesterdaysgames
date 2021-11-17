@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: flex-start;
   margin: 20px 0;
+  gap: 5%;
+  height: 30vh;
   color: #111111;
 }
 
