@@ -1,6 +1,6 @@
 import ContentNav from './ContentNav'
 import Results from './Results'
-import styles from './Content.module.css'
+import styles from '../styles/Content.module.css'
 
 const Content = ({ data, text, title, buttonText }) => {
   if (!data) {

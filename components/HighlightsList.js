@@ -1,4 +1,4 @@
-import styles from './HighlightsList.module.css'
+import styles from '../styles/HighlightsList.module.css'
 
 const HighlightsList = ({ data, title, buttonText }) => {
   const highlightsData = data.highlightsData.data.children

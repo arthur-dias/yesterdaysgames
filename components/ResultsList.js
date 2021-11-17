@@ -1,4 +1,4 @@
-import styles from './ResultsList.module.css'
+import styles from '../styles/ResultsList.module.css'
 
 const ResultsList = ({ data }) => {
   const threadsData = data.threadsData.data.children

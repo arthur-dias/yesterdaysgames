@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Yesterday's Games</title>
+        <title>Yesterday Games</title>
         <meta
           name='description'
           content='Missed a game? See what happenned here!'

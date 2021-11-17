@@ -1,6 +1,6 @@
 import ResultsList from './ResultsList'
 import HighlightsList from './HighlightsList'
-import styles from './Results.module.css'
+import styles from '../styles/Results.module.css'
 
 const Results = ({ data, text, title, buttonText }) => {
   return (
