@@ -20,3 +20,27 @@
   width: 50%;
   line-height: 2rem;
 }
+
+@media (max-width: 962px) {
+  .text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 553px) {
+  .header {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    height: 70vh;
+  }
+}

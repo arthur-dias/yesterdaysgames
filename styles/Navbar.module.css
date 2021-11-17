@@ -9,3 +9,9 @@
 .title {
   color: #111111;
 }
+
+@media (max-width: 320px) {
+  .title {
+    text-align: center;
+  }
+}

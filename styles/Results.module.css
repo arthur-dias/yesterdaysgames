@@ -13,3 +13,9 @@
   font-size: 1.5rem;
   color: #111111;
 }
+
+@media (max-width: 553px) {
+  .results {
+    flex-direction: column;
+  }
+}
