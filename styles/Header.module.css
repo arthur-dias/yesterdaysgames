@@ -3,9 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 20px 0;
-  gap: 5%;
-  height: 30vh;
+  margin: 20px auto 0;
+  height: auto;
   color: #111111;
 }
 
@@ -15,32 +14,14 @@
 }
 
 .text {
-  padding: 0;
+  padding: 0 0 15px;
   margin: 0;
   width: 50%;
   line-height: 2rem;
 }
 
-@media (max-width: 962px) {
+@media screen and (max-width: 1024px) {
   .text {
-    width: 70%;
-  }
-}
-
-@media (max-width: 553px) {
-  .header {
-    height: 40vh;
-  }
-}
-
-@media (max-width: 360px) {
-  .header {
-    height: 60vh;
-  }
-}
-
-@media (max-width: 320px) {
-  .header {
-    height: 70vh;
+    width: 85%;
   }
 }

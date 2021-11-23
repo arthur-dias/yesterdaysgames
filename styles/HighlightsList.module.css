@@ -38,23 +38,3 @@
   color: #ff4500;
   background-color: #fff;
 }
-
-@media (max-width: 735px) {
-  .item {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .button {
-    width: 100%;
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 553px) {
-  .item {
-    align-items: center;
-  }
-  .button {
-    width: 40%;
-  }
-}

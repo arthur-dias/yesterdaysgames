@@ -14,7 +14,7 @@
   color: #111111;
 }
 
-@media (max-width: 553px) {
+@media screen and (max-width: 425px) {
   .results {
     flex-direction: column;
   }
