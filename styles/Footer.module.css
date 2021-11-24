@@ -6,11 +6,14 @@
   grid-gap: 10%;
   gap: 20%;
   height: 10vh;
-  padding-right: 45px;
+  padding: 0 45px 20px 0;
+  background-color: #0f0e17;
+  color: #a7a9be;
+  margin-top: 25px;
 }
 
-.Footer_footer__317iK a:first-child {
-  border-top: 1px solid #282828;
+.footer a:first-child {
+  border-top: 5px solid #f25f4c;
   padding-top: 10px;
 }
 

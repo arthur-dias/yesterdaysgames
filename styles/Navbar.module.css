@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  background-color: #0f0e17;
 }
 
 .title {
-  color: #111111;
+  color: #fffffe;
 }

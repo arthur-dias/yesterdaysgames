@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 20px auto 0;
+  padding: 20px 0;
   height: auto;
-  color: #111111;
+  color: #a7a9be;
+  background-color: #0f0e17;
 }
 
 .title {

@@ -7,7 +7,7 @@
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-  color: #696969;
+  color: #a7a9be;
 }
 
 .list {
@@ -22,19 +22,20 @@
 
 .item {
   padding-bottom: 25px;
+  color: #a7a9be;
 }
 
 .button {
   margin-right: 15px;
-  background-color: #ff4500;
-  border: 1px solid #ff4500;
+  background-color: #ff8906;
+  border: 1px solid #ff8906;
   border-radius: 2px;
-  color: #fff;
+  color: #0f0e17;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .button:hover {
-  color: #ff4500;
-  background-color: #fff;
+  color: #ff8906;
+  background-color: #0f0e17;
 }

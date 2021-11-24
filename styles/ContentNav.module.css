@@ -4,20 +4,20 @@
   align-items: flex-start;
   justify-content: flex-end;
   flex-basis: 10%;
-  color: #111111;
   margin: 0 auto 25px;
 }
 
 .title {
   font-size: 1.5rem;
+  color: #fffffe;
 }
 
 .nav a {
   padding: 5px 0;
-  color: #696969;
+  color: #a7a9be;
   transition: all 0.3s ease-in-out;
 }
 
 .nav a:hover {
-  color: #000;
+  color: #ff8906;
 }

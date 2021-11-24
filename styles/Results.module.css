@@ -11,11 +11,12 @@
 .title {
   text-align: center;
   font-size: 1.5rem;
-  color: #111111;
+  color: #fffffe;
 }
 
 @media screen and (max-width: 425px) {
   .results {
     flex-direction: column;
+    padding: 0;
   }
 }

@@ -2,11 +2,13 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .text {
   text-align: center;
-  color: #111111;
+  color: #a7a9be;
 }
 
 @media screen and (max-width: 425px) {
