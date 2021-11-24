@@ -7,9 +7,9 @@ const premierLeague = (props) => {
     <div>
       <Content
         data={props}
-        text={'Premier League'}
-        title={'Top 5 Discussion Topics'}
-        buttonText={'View Topic'}
+        text={'Europen Soccer'}
+        title={'Top Highlights'}
+        buttonText={'Watch Highlight'}
       />
     </div>
   )
@@ -18,9 +18,11 @@ const premierLeague = (props) => {
 export const getStaticProps = async () => {
   const [threadsRes, highlightsRes] = await Promise.all([
     fetch(
-      'https://www.reddit.com/r/soccer/search.json?q=title%3APost+Match+Thread+Premier+League&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
+      'https://www.reddit.com/r/soccer/search.json?q=title%3APost+Match+Thread&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
     ),
-    fetch('https://www.reddit.com/r/soccer/top.json?limit=5&sort=top&t=day'),
+    fetch(
+      'https://www.reddit.com/r/soccer/search.json?limit=10&sort=top&q=flair%3Amedia+OR+flair%3AMirror&t=day&restrict_sr=on'
+    ),
   ])
 
   const [threadsData, highlightsData] = await Promise.all([

@@ -8,8 +8,8 @@ const brasileirao = (props) => {
       <Content
         data={props}
         text={'Brasileirão'}
-        title={'Top 5 Discussion Topics'}
-        buttonText={'View Topic'}
+        title={'Top Highlights'}
+        buttonText={'Watch Highlight'}
       />
     </div>
   )
@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
       'https://www.reddit.com/r/futebol/search.json?q=title%3APost+Match+Thread+Brasileir%C3%A3o&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
     ),
     fetch(
-      'https://www.reddit.com/r/futebol/search.json?limit=5&q=flair%3ADiscuss%C3%A3o&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
+      'https://www.reddit.com/r/futebol/search.json?limit=10&q=flair%3ALances&include_over_18=on&restrict_sr=on&t=day&sort=top'
     ),
   ])
 

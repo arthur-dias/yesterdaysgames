@@ -7,7 +7,7 @@ const ContentNav = () => {
       <p className={styles.title}>Leagues</p>
       <Link href='/nba'>NBA</Link>
       <Link href='/nfl'>NFL</Link>
-      <Link href='/premierLeague'>Premier League</Link>
+      <Link href='/europeanSoccer'>European Soccer</Link>
       <Link href='/brasileirao'>Brasileirão</Link>
     </div>
   )

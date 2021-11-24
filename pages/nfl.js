@@ -8,7 +8,7 @@ const nfl = (props) => {
       <Content
         data={props}
         text={'NFL'}
-        title={'Top 5 Highlights'}
+        title={'Top Highlights'}
         buttonText={'Watch Highlight'}
       />
     </div>
@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
       'https://www.reddit.com/r/nfl/search.json?q=title%3A%22Post+Game+Thread%22&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
     ),
     fetch(
-      'https://www.reddit.com/r/nfl/search.json?limit=5&q=title%3A%22Highlight%22&include_over_18=on&restrict_sr=on&t=day&sort=top'
+      'https://www.reddit.com/r/nfl/search.json?limit=10&q=flair%3Ahighlight&include_over_18=on&restrict_sr=on&t=day&sort=top'
     ),
   ])
 
