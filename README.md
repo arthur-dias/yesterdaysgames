@@ -13,3 +13,5 @@ O jantar durou mais que o esperado? O motorista do Uber estava devagar demais? V
 Veja o placar dos jogos de ontem com acesso para o tópico do pós-jogo no Reddit, e mais, assista o Top 10 de jogadas!
 
 Desenvolvido com [Next.js](https://nextjs.org).
+
+Visit at: https://yesterdaysgames.vercel.app/
