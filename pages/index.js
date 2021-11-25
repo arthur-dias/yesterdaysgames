@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Content from '../components/Content'
+import ContentNav from '../components/ContentNav'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <link rel='icon' href='../public/favicon.ico' />
       </Head>
 
-      <Content />
+      <ContentNav />
     </div>
   )
 }
