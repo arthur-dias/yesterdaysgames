@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Content from '../components/Content'
 
 const nfl = (props) => {
@@ -5,6 +6,14 @@ const nfl = (props) => {
 
   return (
     <div>
+      <Head>
+        <title>NFL Games of Yesterday</title>
+        <meta
+          name='description'
+          content='Missed an NFL game? See what happenned here!'
+        />
+        <link rel='icon' href='../public/favicon.ico' />
+      </Head>
       <Content
         data={props}
         text={'NFL'}

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Content from '../components/Content'
 
 const brasileirao = (props) => {
@@ -5,6 +6,14 @@ const brasileirao = (props) => {
 
   return (
     <div>
+      <Head>
+        <title>Brasileirão Games of Yesterday</title>
+        <meta
+          name='description'
+          content='Missed an Brasileirão game? See what happenned here!'
+        />
+        <link rel='icon' href='../public/favicon.ico' />
+      </Head>
       <Content
         data={props}
         text={'Brasileirão'}
