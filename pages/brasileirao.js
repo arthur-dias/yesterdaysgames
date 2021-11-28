@@ -44,6 +44,7 @@ export const getStaticProps = async () => {
       threadsData,
       highlightsData,
     },
+    revalidate: 600,
   }
 }
 
