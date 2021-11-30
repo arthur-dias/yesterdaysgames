@@ -9,6 +9,7 @@ export default function Home() {
         <meta
           name='description'
           content='Missed a game? See what happenned here!'
+          lang='en'
         />
         <link rel='icon' href='../public/favicon.ico' />
       </Head>
