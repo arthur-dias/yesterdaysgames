@@ -24,7 +24,7 @@ const brasileirao = (props) => {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const [threadsRes, highlightsRes] = await Promise.all([
     fetch(
       'https://www.reddit.com/r/futebol/search.json?q=title%3APost+Match+Thread+Brasileir%C3%A3o&restrict_sr=on&include_over_18=on&sort=relevance&t=day'
@@ -44,7 +44,6 @@ export const getStaticProps = async () => {
       threadsData,
       highlightsData,
     },
-    revalidate: 60,
   }
 }
 
