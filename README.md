@@ -4,7 +4,11 @@ Site para acessar os tópicos pós-jogo do Reddit de algumas ligas esportivas e 
 
 ## Frameworks e Libs utilizadas
 
-[Next.js](https://nextjs.org).
+[Next.js](https://nextjs.org)
+
+## API
+
+[Reddit](https://www.reddit.com/dev/api/)
 
 ## Styling
 
