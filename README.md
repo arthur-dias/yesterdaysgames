@@ -1,17 +1,19 @@
-## Yesterday's Games
+## Descrição
 
-Dinner took more time than you expected? Uber driver wasn't fast enough? Did you sleep again before the match had even started? Fear not, I got you!
+Site para acessar os tópicos pós-jogo do Reddit de algumas ligas esportivas e para vizualizar melhores momentos.
 
-View the score of games played yesterday with direct access to Reddit's Post Match Threads for further discussion, and on top of that, watch the Top 10 Highlights of different Leagues! 
+## Frameworks e Libs utilizadas
 
-Created with [Next.js](https://nextjs.org).
+[Next.js](https://nextjs.org).
 
-## Jogos de Ontem
+## Styling
 
-O jantar durou mais que o esperado? O motorista do Uber estava devagar demais? Você dormiu antes mesmo do jogo começar de novo? Não tema, temos a solução!
+CSS Modules
 
-Veja o placar dos jogos de ontem com acesso para o tópico do pós-jogo no Reddit, e mais, assista o Top 10 de jogadas!
+## Inicializar app
 
-Desenvolvido com [Next.js](https://nextjs.org).
-
-Visit at: https://yesterdaysgames.vercel.app/
+Clonar repositório;
+cd yesterdaysgames/
+npm install || yarn install;
+npm run dev || yarn dev;
+Abrir http://localhost:3000 no browser.
