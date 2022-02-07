@@ -16,8 +16,8 @@ CSS Modules
 
 ## Inicializar app
 
-Clonar repositório;
-cd yesterdaysgames/
-npm install || yarn install;
-npm run dev || yarn dev;
-Abrir http://localhost:3000 no browser.
+1) Clonar repositório;
+2) cd yesterdaysgames/
+3) npm install || yarn install;
+4) npm run dev || yarn dev;
+5) Abrir [http://localhost:3000](http://localhost:3000) no browser.
